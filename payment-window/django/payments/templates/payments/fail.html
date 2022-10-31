@@ -23,30 +23,20 @@
       <div class="col-md-3"></div>
 
       <div class="col-md-6">
-        <!-- 결제 성공 시 -->
-        <h2 style="margin-top:10px;  padding:20px 0px 10px 0px">
-          <img width="45px" src="https://static.toss.im/3d-emojis/u1F911-apng.png">
-          결제 성공
+
+        <!-- ================================== 결제 실패 시 ================================== -->
+        <h2 style="margin-top:10px; padding:20px 0px 10px 0px">
+          <img width="45px" src="https://static.toss.im/3d-emojis/u1F975-apng.png">
+          결제 실패
         </h2>
 
-        <div class="box_section">
+        <div id="info" class="box_section">
           <div class="card-body">
             <div class="gray">
-              <p>paymentKey = {{ respaymentKey }} </p>
-              <p>orderId = {{ resorderId }} </p>
+              <p>에러메시지 : {{ code }}</p>
+              <p>에러코드: {{ message }}</p>
             </div>
           </div>
-        </div> 
-
-        <div class="box_section">
-          <div class="card-body">
-            <div class="gray">
-              <b>Response Data :</b>
-              <pre>
-                {{ res }}              
-              </pre>
-            </div>
-          </div> 
         </div>
         
         <div class="col-md-3"></div>
