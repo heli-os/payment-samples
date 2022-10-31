@@ -180,7 +180,7 @@
     let paymentType = document.getElementById("paymentType").value;
     let requestJson = initPaymentsData("공통",paymentType);
     
-    tossPayments.requestPayment('CARD', requestJson)
+    tossPayments.requestPayment(paymentType, requestJson)
       .catch(function (error) {
         // 응답 처리 (https://docs.tosspayments.com/reference/js-sdk#응답-처리)
         if (error.code === 'USER_CANCEL') {
