@@ -13,8 +13,4 @@ Ruby on Rails 환경을 먼저 준비 해주세요.
 ** app/views 내 HTML 템플릿
 ** config/routes.rb 에 설정된 route 를 확인 해주세요. 
 
-샘플에는 CSS 를 적용해두었어요. 
-* asset/stylesheet 에 css 파일 추가
-* config/initializers/asset.rb 에 precompile 부분 아래 내용 추가
-** Rails.application.config.assets.precompile += %w( bulma.min.css )
 ```
